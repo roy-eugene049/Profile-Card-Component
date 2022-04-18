@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --darkBlue: hsl(229, 23%, 23%);
+    --grayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+   font-family: Kumbh Sans;
+    background:var(--Darkcyan);
+    overflow: hidden;
+}
+h1{
+    color:var(--darkBlue) ;
+    margin-bottom:4px ;
+}
+span{
+    color: var(--grayishBlue);
+}
+p{
+    color: var(--grayishBlue);
+    font-size: 14px;
+}
+.img-top {
+    position: absolute;
+    overflow: hidden;
+    transform: translate(-300px ,-570px);
+}
+.img-bottom {
+    position: absolute;
+    overflow: hidden;
+    transform: translate(600px ,-280px);
+z-index: 1;
+}
+main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    border-radius: 15px;
+    background: white;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.box img{
+    border-radius: 10px 10px 0px 0px;
+    z-index: 1;
+}
+.profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.img-profile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-profile img{
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+
+.information{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.information h1{
+    font-weight: 700;
+}
+hr{
+    height:1px;
+    border: none;
+    width: 100%;
+    background-color:rgb(209, 209, 209);
+    margin-bottom: 20px;
+}
+@media (max-width:700px) {
+    .img-top {
+        transform: translate(-650px ,-670px);
+    }
+    .img-bottom{
+        transform: translate(210px ,-380px);
+    z-index: 1;
+    }
+    
+}
